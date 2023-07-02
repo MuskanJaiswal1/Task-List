@@ -19,8 +19,10 @@ addTask.onclick = () => {
     }
     else {
         // insert
+        if(tasks!=''){
         const tasks = task.value;
         taskArray.push({ 'taskArrayItem': tasks });
+        }
     }
     saveInfo(taskArray);
     console.log(taskArray);
